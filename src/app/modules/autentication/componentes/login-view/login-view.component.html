@@ -9,8 +9,10 @@
     <div class="row">
         <div class="col col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
             <div class="input-group mb-3">
-                <div class="input-group-prepend disable-select">
-                  <span class="input-group-text">Usuario</span>
+                <div class="input-group-prepend disable-select p-1">
+                    <i-bs name="person-circle"
+                        width="40" height="40">
+                    </i-bs>
                 </div>
                <input type="text" aria-label="user" class="form-control" (keypress)="keyPress($event, 'user')"
                         [(ngModel)]="login.username" [ngModelOptions]="{standalone: true}">
@@ -21,8 +23,10 @@
     <div class="row">
         <div class="col col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
             <div class="input-group mb-3">
-                <div class="input-group-prepend disable-select">
-                  <span class="input-group-text">Contraseña</span>
+                <div class="input-group-prepend disable-select p-1">
+                    <i-bs name="key"
+                        width="40" height="40">
+                    </i-bs>
                 </div>
                <input type="password" aria-label="pass" class="form-control" (keypress)="keyPress($event, 'pass')"
                         [(ngModel)]="login.password" [ngModelOptions]="{standalone: true}">
