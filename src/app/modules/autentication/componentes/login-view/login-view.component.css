@@ -1,18 +1,19 @@
-.logo img {
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.logo img{
+    height: 100%;
+    width: auto;
 }
-    
 
 .logo {
+    margin-top: 19vh;
     position: relative;
-    height: 250px;
+    height: 50px;
 }
 
 .content {
     background-color: linear-gradient(#485563, #29323c)
+}
+
+.back-p2{
+    background:rgb(48, 255, 135);
 }
     

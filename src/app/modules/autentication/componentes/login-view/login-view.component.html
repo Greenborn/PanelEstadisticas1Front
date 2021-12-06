@@ -1,42 +1,67 @@
-<div class="container content">
-    <div class="row disable-select">
-        <div class="col col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
-            <div class="logo"><img  src="assets/img/logo.png" /></div>
-        </div>
-    </div>
-
-    
+<div class="container-fluid content">
     <div class="row">
-        <div class="col col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend disable-select p-1">
-                    <i-bs name="person-circle"
-                        width="40" height="40">
-                    </i-bs>
+
+        <div class="col-12 col-md-6 vh-100">
+            <div class="row disable-select">
+                <div class="col col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="logo"><img  src="assets/img/logo.png" /></div>
                 </div>
-               <input type="text" aria-label="user" class="form-control" (keypress)="keyPress($event, 'user')"
-                        [(ngModel)]="login.username" [ngModelOptions]="{standalone: true}">
+            </div>
+
+            <div class="row disable-select">
+                <div class="col col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <h2>Iniciar Sesión</h2>
+                </div>
+            </div>
+        
+            
+            <div class="row">
+                <div class="col col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend disable-select p-1">
+                            <i-bs name="person-circle"
+                                width="35" height="35">
+                            </i-bs>
+                        </div>
+                       <input type="text" aria-label="user" class="form-control" (keypress)="keyPress($event, 'user')"
+                                [(ngModel)]="login.username" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend disable-select p-1">
+                            <i-bs name="key"
+                                width="35" height="35">
+                            </i-bs>
+                        </div>
+                       <input type="password" aria-label="pass" class="form-control" (keypress)="keyPress($event, 'pass')"
+                                [(ngModel)]="login.password" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <button type="button" class="btn btn-dark col-12" (click)="next()">Ingresar</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend disable-select p-1">
-                    <i-bs name="key"
-                        width="40" height="40">
-                    </i-bs>
+        <div class="col-12 col-md-6 vh-100 d-none d-md-block back-p2">
+            <div class="row">
+                <div class="col">
+                    <h2>Greenborn Estadisticas 1</h2>
+                    <h4>Demo de Dashboard de reporte de estadísticas de Equipos</h4>
+                    <p>El proyecto nació inicialmente como la solución a la necesidad de almacenar los datos obtenidos a partir de logs de monitoreo de variables de equipos pertenecientes a una empresa minera.</p>
+                    <p>Dichos logs se confeccionaban a partir de la información obtenida por medio de sensores instalados en los equipos a monitorear.</p>
+                    <p>Luego, de manera periódica, cada dispositivo enviaba una petición de actualización de la información de la base de datos.</p>
+                    <p>Puede probar la demo con el usuario: "admin", contraseña: "password".</p>
                 </div>
-               <input type="password" aria-label="pass" class="form-control" (keypress)="keyPress($event, 'pass')"
-                        [(ngModel)]="login.password" [ngModelOptions]="{standalone: true}">
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4">
-            <button type="button" class="btn btn-dark col-12" (click)="next()">Ingresar</button>
-        </div>
     </div>
 </div>
