@@ -14,11 +14,13 @@ import { AppUIUtilsModule } from './modules/AppUIUtils/app-uiutils.module';
 
 import { LoadingComponent } from './modules/AppUIUtils/components/loading/loading.component';
 import { MessageComponent } from './modules/AppUIUtils/components/message/message.component';
+import { allIcons, NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoadingComponent,
+    
     MessageComponent
   ],
   imports: [
@@ -26,12 +28,14 @@ import { MessageComponent } from './modules/AppUIUtils/components/message/messag
     AppRoutingModule,
     AutenticationModule,
     DashboardModule,
+    AppUIUtilsModule,
     FormsModule,
     AppUIUtilsModule,
     ReactiveFormsModule,
-    ChartModule,
+    ChartModule,AppUIUtilsModule,
     NgbModule,NgbPopoverModule,
-    NgbNavModule, NgbAccordionModule
+    NgbNavModule, NgbAccordionModule,
+    NgxBootstrapIconsModule.pick(allIcons)
   ],
   providers: [],
   bootstrap: [AppComponent]

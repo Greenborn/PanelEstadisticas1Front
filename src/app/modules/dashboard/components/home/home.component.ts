@@ -30,7 +30,5 @@ export class HomeComponent implements OnInit {
     this.ChangeLocationSubj.unsubscribe();
   }
 
-  logout(){
-    this.authService.toLogOut();
-  }
+  
 }

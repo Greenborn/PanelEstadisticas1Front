@@ -18,6 +18,8 @@ import * as more from 'highcharts/highcharts-more.src';
 import * as exporting from 'highcharts/modules/exporting.src';
 import { BootstrapFormComponent } from '../AppUIUtils/components/bootstrap-form/bootstrap-form.component';
 import { FormsModule } from '@angular/forms';
+import { BootstrapSidemenuComponent } from '../AppUIUtils/components/bootstrap-sidemenu/bootstrap-sidemenu.component';
+import { allIcons, NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 
 const routes: Routes = [
   {
@@ -34,6 +36,7 @@ const routes: Routes = [
     DetalleEquipoComponent,
     MapaEquiposComponent,
     BootstrapFormComponent,
+    BootstrapSidemenuComponent,
   ],
   imports: [
     CommonModule,
@@ -42,7 +45,8 @@ const routes: Routes = [
     ChartModule,
     DetalleEquipoModule,
     FormsModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    NgxBootstrapIconsModule.pick(allIcons)
   ],
   providers: [
     {
