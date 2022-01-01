@@ -27,9 +27,9 @@ export class HomeComponent implements OnInit {
       this.dashboardService.paramsDetalleEquipo = response.params;
     } });
 
-    this.menuConfig.addLink(new BootstrapSideMenuLink({ id:1, icon: 'gear', name:'Equipos', color:'rgb(166, 176, 255)' }));
-    this.menuConfig.addLink(new BootstrapSideMenuLink({ id:2, icon: 'clipboard-data', name:'Estadisticas',color:'rgb(166, 176, 255)' }));
-    this.menuConfig.addLink(new BootstrapSideMenuLink({ id:3, icon: 'map', name:'Mapa', color:'rgb(166, 176, 255)' }));
+    this.menuConfig.addLink(new BootstrapSideMenuLink({ id:1, icon: 'gear', name:'Equipos', color:'#FFF' }));
+    this.menuConfig.addLink(new BootstrapSideMenuLink({ id:2, icon: 'clipboard-data', name:'Estadisticas',color:'#FFF' }));
+    this.menuConfig.addLink(new BootstrapSideMenuLink({ id:3, icon: 'map', name:'Mapa', color:'#FFF' }));
     
   }
 
